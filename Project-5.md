@@ -16,12 +16,14 @@
 `CREATE USER 'remote_user' @ '%';`
 
 `CREATE DATABASE 'test_db';`
+
 ![Remote-user-and-database-creation](./Images/Creating-DB-and-USER.png)
 
 ### Granting and Flushing Privileges 
 `GRANT ALL ON test_db.* TO 'remote_user'@'%' WITH GRANT OPTION;`
 
 `FLUSH PRIVILEGES;`
+
 ![Granting-and-Flushing-Privileges](./Images/Granting-and-Flushing-Privileges.png)
 
 
